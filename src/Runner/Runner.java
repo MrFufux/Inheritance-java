@@ -33,22 +33,22 @@ public class Runner {
         System.out.println("The brand of my bicycle is: " + myMountainBike.getBrand() +
                 " in " + myMountainBike.getColor() + " color" +
                 ", with a velocity of " + myMountainBike.getVelocity() +
-                " and is in the cambio " + myMountainBike.getCambio());
+                " and is in the cambio " + myMountainBike.getGear());
 
         System.out.println("-------------------------------------------------------------");
 
         myMountainBike.setBrand("Corleone");
         myMountainBike.setColor("Red");
-        myMountainBike.cambioUp();
-        myMountainBike.cambioUp();
-        myMountainBike.cambioDown();
+        myMountainBike.gearUp();
+        myMountainBike.gearUp();
+        myMountainBike.gearDown();
         myMountainBike.pedal(5);
         myMountainBike.pedal(5);
 
         System.out.println("The brand of my bicycle is: " + myMountainBike.getBrand() +
                 " in " + myMountainBike.getColor() + " color" +
                 ", with a velocity of " + myMountainBike.getVelocity() +
-                " and is in the cambio " + myMountainBike.getCambio());
+                " and is in the cambio " + myMountainBike.getGear());
 
 
     }

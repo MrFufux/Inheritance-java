@@ -4,40 +4,40 @@ import Classes.Bicycle;
 
 public class MountainBicycle extends Bicycle {
     //define attribute
-    private int cambio;
+    private int gear;
 
 
     //Constructors
     public MountainBicycle(){
-        if(cambio > 0 && cambio <= 12){
-            this.cambio = cambio;
+        if(gear > 0 && gear <= 12){
+            this.gear = gear;
         }else {
-            this.cambio = 6;
+            this.gear = 6;
         }
     }
 
     //define methods
-    public void cambioUp(){
-        if(this.cambio < 12){
-            cambio++;
+    public void gearUp(){
+        if(this.gear< 12){
+            gear++;
         }
     }
 
-    public void cambioDown(){
-        if(this.cambio > 1){
-            cambio--;
+    public void gearDown(){
+        if(this.gear > 1){
+            gear--;
         }
     }
 
     //getter
-    public int getCambio(){
-        return this.cambio;
+    public int getGear(){
+        return this.gear;
     }
 
     @Override
     public void pedal(float acceleration){
-        float accelerationWithCambio = acceleration * (this.cambio/6);
-        super.pedal(accelerationWithCambio);
+        float accelerationWithGear = acceleration * (this.gear/6);
+        super.pedal(accelerationWithGear);
     }
 
 }
